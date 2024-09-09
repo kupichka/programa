@@ -40,6 +40,7 @@
 
 body {
   background-color:var(--article-background-color);
+  color: var(--content-text-color);
 }
 
 .time-table-container {
@@ -201,4 +202,19 @@ body {
  opacity: 62.5%;
  padding-bottom: 3px;
  font-size: 0.75rem;
+}
+
+a {
+    color: var(--content-link-color);
+}
+
+a:visited {
+    color: var(--content-visited-link-color);
+}
+
+.footer {
+    padding: 20px;
+    margin: 5px;
+    margin-top: 20px;
+    background-color: var(--article-lighter-background-color);
 }
