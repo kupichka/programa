@@ -137,7 +137,7 @@ body {
 }
 
 .lesson { 
-    height: 75px;
+    height: 125px;
     display: flex;
     flex-wrap: wrap;
     padding: 5px;
@@ -147,7 +147,7 @@ body {
 }
 
 .lesson-double {
-    height: 120px;
+    /*height: 120px;*/
 }
 
 .lesson-subject {
@@ -158,11 +158,19 @@ body {
 }
 
 .lesson-teacher, .lesson-room {
-    display: flex;
-    align-self: end;
+    /*display: flex;
+    align-self: end;*/
     /* background-color: green; */
 }
 
 .lesson-room {
    /* background-color: red;*/
+}
+
+.lesson-info {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    column-gap: 5px;
 }
