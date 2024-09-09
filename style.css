@@ -51,6 +51,7 @@ body {
   display:table;
   text-align: center;
   overflow: hidden;
+  overflow-x: scroll;
   margin:10px;
   color: #ffecd6;
   box-shadow:0 -2px var(--article-border-color),
