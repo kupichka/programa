@@ -117,13 +117,13 @@ body {
 
 /* Hover for column */
 .time-table td:hover::after,
-.time-table thead th:not(th.FCKER):not(:empty):hover::after,
+.time-table thead th:not(th.day):not(:empty):hover::after,
 .time-table td:focus::after,
-.time-table thead th:not(th.FCKER):not(:empty):focus::after,
+.time-table thead th:not(th.day):not(:empty):focus::after,
 .time-table td:active::after,
-.time-table thead th:not(th.FCKER):not(:empty):active::after,
+.time-table thead th:not(th.day):not(:empty):active::after,
 .time-table td:active::after,
-.time-table thead th:not(th.FCKER):not(:empty):active::after { 
+.time-table thead th:not(th.day):not(:empty):active::after { 
   overflow-y: hidden;
   content: '';  
   height: 10000px;
@@ -135,9 +135,9 @@ body {
 }
 
 .time-table td:hover::after,
-.time-table th:not(th.FCKER):hover::after,
+.time-table th:not(th.day):hover::after,
 .time-table td:active::after,
-.time-table th:not(th.FCKER):active::after {
+.time-table th:not(th.day):active::after {
   background-color: var(--table-hover-color);
 }
 
