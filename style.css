@@ -51,7 +51,6 @@ body {
   display:table;
   text-align: center;
   overflow: hidden;
-  overflow-x: scroll;
   margin:10px;
   color: #ffecd6;
   box-shadow:0 -2px var(--article-border-color),
@@ -149,7 +148,7 @@ body {
 }
 
 .lesson { 
-    height: 125px;
+    height: 130px;
     display: flex;
     flex-wrap: wrap;
     padding: 5px;
@@ -163,13 +162,15 @@ body {
 }
 
 .lesson-subject {
+    font-size: 1.2rem;
     font-weight: bold;
     flex-basis: 100%;
     text-align: center;
     /* background-color: blue; */
 }
 
-.lesson-teacher, .lesson-room {
+.lesson-teacher {
+    font-style: italic;
     /*display: flex;
     align-self: end;*/
     /* background-color: green; */
@@ -185,4 +186,19 @@ body {
     justify-content: space-between;
     align-items: end;
     column-gap: 5px;
+}
+
+.diff {
+    text-decoration: underline;
+}
+
+.top-padding {
+    padding-top: 5px;
+}
+
+.group-text {
+ color: var(--content-text-color);
+ opacity: 62.5%;
+ padding-bottom: 3px;
+ font-size: 0.75rem;
 }
