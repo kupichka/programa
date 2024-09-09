@@ -70,7 +70,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 2;
-    background-color: var(--article-lighter-background-color);
+    background-color: var(--table-header-color);
 }
 
 .time-table tr:not(:nth-child(1)) {
