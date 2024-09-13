@@ -45,7 +45,7 @@ body {
 
 .time-table-container {
   width:100%;
- /* overflow-x:auto; */
+  overflow-x:scroll; 
 }
 
 .time-table {
