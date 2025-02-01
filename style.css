@@ -218,3 +218,22 @@ a:visited {
     margin-top: 20px;
     background-color: var(--article-lighter-background-color);
 }
+
+@media (max-width: 768px) {
+  .time-table-container {
+    max-height: 80vh;
+  }
+}
+
+.time-table th:not(:first-of-type),
+.time-table td {
+  width: 10vw;
+  min-width: 8vw;
+  max-width: 16vw;
+  white-space: normal;
+}
+
+.lesson-teacher {
+  text-align: right;
+}
+
