@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8"> 
+<link rel="stylesheet" href="./style.css">
+<body>
+	<div class="time-table-class-name">Програма 9б - Срок II</div>
+	<select id="style-switcher">
+		<option value="style.css">Purple</option>
+		<option value="theme 4-2.css">Purple 2</option>
+		<option value="theme 3-2.css">Green</option>
+		<option value="theme 5-1.css">Green 2</option>
+		<option value="theme 1-3.css">Blue</option>
+	</select>
+	<script src="theme-switcher.js"></script>
+	<!--
+
+	For whatever reason, even only having the jquery script breaks the column highlights.
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		$('.time-table td').each(function() {
+		// Check if the cell's text, trimmed of whitespace, is empty.
+		if ($(this).text().trim() === "") {
+			$(this).css('visibility', 'hidden');
+		}
+		});
+	});
+	</script> -->
+	<div class="time-table-container">
+		<table class="time-table">
+			<thead>
+				<tr>
+					<th class="day">Ден</th>
+					<th>7<br>12:30-13:10</th>
+					<th>1<br>13:20-14:00</th>
+					<th>2<br>14:05-14:45</th>
+					<th>3<br>14:55-15:35</th>
+					<th>4<br>15:55-16:35</th>
+					<th>5<br>16:45-17:25</th>
+					<th>6<br>17:35-18:15</th>
+					<th>7<br>18:20-19:00</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>ПОН</th>
+					<td class="stupid"></td>
+					<td>
+						<div class="lesson">
+							<div class="lesson-subject">
+								Час на Класа
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room">
+									34
+								</div>
+								<div class="lesson-teacher">
+									Светослав Стойчев
+								</div>
+							</div>
+						</div>
+					</td>
+					<td colspan="2">
+						<div class="lesson">
+							<div class="lesson-subject">
+								Математика
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room">
+									34
+								</div>
+								<div class="lesson-teacher">
+									Руслан Капелев
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="lesson">
+							<div class="lesson-subject">
+								История
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room">
+									34
+								</div>
+								<div class="lesson-teacher">
+									Б. Петров
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="lesson">
+							<div class="lesson-subject">
+								Немски
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room">
+									34
+								</div>
+								<div class="lesson-teacher">
+									Августина Давчева
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="lesson">
+							<div class="lesson-subject">
+								География
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room diff">
+									35
+								</div>
+								<div class="lesson-teacher">
+									Василка Йораднова
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="lesson">
+							<div class="lesson-subject">
+								Физика
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room diff">
+									32
+								</div>
+								<div class="lesson-teacher">
+									Нели Михайлова
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th>ВТ</th>
+					<td colspan="2">
+						<div class="lesson">
+							<div class="lesson-subject">
+								Английски<br><div class="group-text">Group 1</div>
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room">
+									34
+								</div>
+								<div class="lesson-teacher">
+									Д. Кожухарова
+								</div>
+							</div>
+							<div class="lesson-subject top-padding">
+								Английски<br><div class="group-text">Group 2</div>
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room diff">
+									38
+								</div>
+								<div class="lesson-teacher">
+									Е. Шополова
+								</div>
+							</div>
+						</div>
+					</td>
+					<td colspan="2">
+						<div class="lesson">
+							<div class="lesson-subject">
+								Немски
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room">
+									34
+								</div>
+								<div class="lesson-teacher">
+									Августина Давчева
+								</div>
+							</div>
+						</div>
+					</td>
+					<td colspan="2">
+						<div class="lesson">
+							<div class="lesson-subject">
+								Математика
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room">
+									34
+								</div>
+								<div class="lesson-teacher">
+									Руслан Капелев
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="lesson">
+							<div class="lesson-subject">
+								Информационни<br><div class="group-text">Group 1</div>
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room diff">
+									28
+								</div>
+								<div class="lesson-teacher">
+									Д. Златинска
+								</div>
+							</div>
+							<div class="lesson-subject top-padding">
+								Информационни<br><div class="group-text">Group 2</div>
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room diff">
+									24
+								</div>
+								<div class="lesson-teacher">
+									Е. Грозданова
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="lesson">
+							<div class="lesson-subject">
+								ФВС
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room diff">
+									ФВС
+								</div>
+								<div class="lesson-teacher">
+									С. Стоянов
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th>СР</th>
+					<td>
+						<div class="lesson">
+							<div class="lesson-subject">
+								Музика
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room">
+									34
+								</div>
+								<div class="lesson-teacher">
+									Жана Риджалска
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="lesson">
+							<div class="lesson-subject">
+								История
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room">
+									34
+								</div>
+								<div class="lesson-teacher">
+									Бранислав Петров
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="lesson">
+							<div class="lesson-subject">
+								Химия
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room diff">
+									40
+								</div>
+								<div class="lesson-teacher">
+									Б. Толев
+								</div>
+							</div>
+						</div>
+					</td>
+					<td colspan="2">
+						<div class="lesson">
+							<div class="lesson-subject">
+								Математика
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room">
+									34
+								</div>
+								<div class="lesson-teacher">
+									Руслан Капелев
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="lesson">
+							<div class="lesson-subject">
+								Немски
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room">
+									34
+								</div>
+								<div class="lesson-teacher">
+									Августина Давечева
+								</div>
+							</div>
+						</div>
+					</td>
+					<td colspan="2">
+						<div class="lesson">
+							<div class="lesson-subject">
+								Български
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room">
+									34
+								</div>
+								<div class="lesson-teacher">
+									Светослав Стойчев
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th>ЧТ</th>
+					<td></td>
+					<td></td>
+					<td>
+						<div class="lesson">
+							<div class="lesson-subject">
+								Философия
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room">
+									34
+								</div>
+								<div class="lesson-teacher">
+									М. Шанова
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="lesson">
+							<div class="lesson-subject">
+								Биология
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room diff">
+									22
+								</div>
+								<div class="lesson-teacher">
+									М. Челенкова
+								</div>
+							</div>
+						</div>
+					</td>
+					<td colspan="2">
+						<div class="lesson">
+							<div class="lesson-subject">
+								Информатика<br><div class="group-text">Group 1</div>
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room diff">
+									26
+								</div>
+								<div class="lesson-teacher">
+									Д. Щрегарски
+								</div>
+							</div>
+							<div class="lesson-subject top-padding">
+								Информатика<br><div class="group-text">Group 2</div>
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room diff">
+									27
+								</div>
+								<div class="lesson-teacher">
+									М. Иванов
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="lesson">
+							<div class="lesson-subject">
+								Математика
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room">
+									34
+								</div>
+								<div class="lesson-teacher">
+									Руслан Капелев
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="lesson">
+							<div class="lesson-subject">
+								ФВС
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room diff">
+									ФВС
+								</div>
+								<div class="lesson-teacher">
+									С. Стоянов
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th>ПТ</th>
+					<td></td>
+					<td>
+						<div class="lesson">
+							<div class="lesson-subject">
+								ФВС
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room diff">
+									ФВС
+								</div>
+								<div class="lesson-teacher">
+									С. Стоянов
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="lesson">
+							<div class="lesson-subject">
+								Български
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room">
+									34
+								</div>
+								<div class="lesson-teacher">
+									Светослав Стойчев
+								</div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="lesson">
+							<div class="lesson-subject">
+								Химия
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room diff">
+									40
+								</div>
+								<div class="lesson-teacher">
+									Б. Толев
+								</div>
+							</div>
+						</div>
+					</td>
+					<td colspan="2">
+						<div class="lesson">
+							<div class="lesson-subject">
+								Математика
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room">
+									34
+								</div>
+								<div class="lesson-teacher">
+									Руслан Капелев
+								</div>
+							</div>
+						</div>
+					</td>
+					<td colspan="2">
+						<div class="lesson">
+							<div class="lesson-subject">
+								Немски
+							</div>
+							<div class="lesson-info">
+								<div class="lesson-room">
+									34
+								</div>
+								<div class="lesson-teacher">
+									Августина Давчева
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="footer">
+		Original info: <a href="https://npmg.edupage.org/timetable/" target="_blank">NPMG</a><br>
+		Last updated: 01-02-2025<br>
+		Made with &lt;3 for 9Б
+	</div>
+</body>
+</html>
