@@ -1,0 +1,12 @@
+:root {
+    --content-text-color: #000000;
+    --article-background-color: #ffffff;
+    --article-lighter-background-color: #cbcbcb;
+    --article-border-color: #000000;
+    --button-top-border-color: #000000;
+    --button-hover-top-border-color: #000000;
+    --button-selected-border-color: #000000;
+    --button-background-color: #d0d0d0;
+    --table-hover-color: #eaeaea;
+    --table-header-color: #eaeaea;
+}
